@@ -10,7 +10,6 @@
 main {
     width: 96vw;
     height: 96vh;
-
 }
 
 div {
@@ -37,4 +36,9 @@ button {
     font-size: 14px;
     font-weight: bold;
     border: none;
+}
+
+button:hover {
+    border: solid 2px red;
+    box-shadow: 0 0 10px red;
 }
