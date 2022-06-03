@@ -1,0 +1,40 @@
+@charser"UTF-8";
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 96vw;
+    height: 96vh;
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: black 5px 5px 10px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    color: blue;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #eeb408, #ffd453);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
