@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: blue;
+    text-shadow: #fff 2px 2px 2px;
+    /* background-image: linear-gradient(to left, #9fcfd5, #6bf0d8); */
+    /* border: solid 2px #000; */
+}
+
+h2,
+button,
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    margin: 7px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* background-color: #a3e8fb; */
+    box-shadow: rgb(44, 44, 44) 2px 2px 10px;
+    /* border: solid 2px #000; */
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    color: red;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+#btn_compare {
+    width: 150px;
+    height: 40px;
+    margin: 10px calc((400px - 150px) / 2);
+    cursor: pointer;
+}
+
+#result {
+    color: green;
+    text-align: center;
+}
