@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     <!-- ---------- imports the css ---------- -->
-    <link rel="stylesheet" href="strings.css">
+    <link rel="stylesheet" href="compare_date.css">
 
     <!-- =============== end imports =============== -->
 
@@ -34,23 +34,32 @@
         <form>
             <Fieldset>
                 <legend>
-                    <h1>Comparação de duas strings</h1>
+                    <h1>Dias de vida que ainda tem</h1>
                 </legend>
 
-                <h2>Digite a primeira string (texto):</h2>
-                <input type="text" id="string1" placeholder="Digite a string 1 aqui">
+                <h2>Dia de nascimento (número):</h2>
+                <input type="number" id="day" placeholder="Digite o dia que nasceu">
 
-                <h2>Digite a segunda string (texto):</h2>
-                <input type="text" id="string2" placeholder="Digite a string 2 aqui">
+                <h2>Mês de nascimento (número):</h2>
+                <input type="number" id="month" placeholder="Digite o mês que nasceu">
 
-                <button type="button" id="btn_compare">Comparar</button>
+                <h2>Ano de nascimento (número):</h2>
+                <input type="number" id="year" placeholder="Digite o ano que nasceu">
+
+                <h2>Qual seu gênero:</h2>
+                <input type="radio" value="M" id="masculine" name="genre">
+                <label for="masculine">Masculino</label>
+                <input type="radio" value="F" id="feminine" name="genre">
+                <label for="feminine">Feminino</label>
+
+                <button type="button" id="btn_verific">Verificar</button>
 
                 <h2 id="result">Resultado</h2>
             </Fieldset>
         </form>
     </main>
 
-    <script src="strings.js"></script>
+    <script src="compare_date.js"></script>
 </body>
 
 </html>
