@@ -7,38 +7,54 @@
     flex-direction: column;
 }
 
+body {
+    background-color: #bfbfbf;
+}
+
 main {
     width: 96vw;
     height: 96vh;
 }
 
 div {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(231, 231, 231);
     box-shadow: black 5px 5px 10px;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-shadow: #646464 1px 1px 2px;
     margin: 0 auto;
     color: blue;
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     margin: 10px 0;
     border-radius: 15px;
     background-image: linear-gradient(to top, #eeb408, #ffd453);
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
+    transition: all .2s;
 }
 
 button:hover {
-    border: solid 2px red;
-    box-shadow: 0 0 10px red;
+    border: solid 2px green;
+    box-shadow: 0 0 10px green;
+}
+
+h1 {
+    color: #b32728;
+    color: #ff7223;
+    color: #171717;
+    color: #bbd312;
+    color: #b32728;
 }
