@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- ---------- imports the css ---------- -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de comparação</title>
+</head>
+
+<body>
+
+    <!-- ---------- main the page ---------- -->
+    <main>
+        <form>
+            <Fieldset>
+                <legend>
+                    <h1>Calculadora</h1>
+                </legend>
+
+                <h2>Operando 1:</h2>
+                <input type="number" id="number1" placeholder="Digite o primeiro número">
+
+                <h2>Operando 2:</h2>
+                <input type="number" id="number2" placeholder="Digite o segundo número">
+
+                <select name="operation" id="select_operation">
+                    <option value="sum">Somar</option>
+                    <option value="subtraction">Subtrair</option>
+                    <option value="multiplication">Multiplicar</option>
+                    <option value="division">Dividir</option>
+                </select>
+
+                <button type="button" id="btn_calc">Calcular</button>
+
+                <h2 id="result">-</h2>
+
+            </Fieldset>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
