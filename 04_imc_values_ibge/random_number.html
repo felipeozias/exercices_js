@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- ---------- imports the css ---------- -->
+    <link rel="stylesheet" href="css/random_number..css">
+
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de comparação</title>
+</head>
+
+<body>
+
+    <!-- ---------- main the page ---------- -->
+    <main>
+        <form>
+            <Fieldset>
+                <legend>
+                    <h1>Número aleatório</h1>
+                </legend>
+
+                <h2>Valor mínimo:</h2>
+                <input type="text" id="val_min" placeholder="Digite um número inteiro">
+
+                <h2>Valor máximo:</h2>
+                <input type="text" id="val_max" placeholder="Digite um número inteiro">
+
+                <button type="button" id="btn_calc">Sortear</button>
+
+                <h2 id="result">-</h2>
+
+            </Fieldset>
+        </form>
+    </main>
+
+    <script src="js/random_number.js"></script>
+</body>
+
+</html>
