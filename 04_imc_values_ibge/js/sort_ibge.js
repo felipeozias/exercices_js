@@ -1,12 +1,12 @@
 // import the elements
-const btn_sort = document.querySelector('#btn_sort');
+const btnSort = document.querySelector('#btnSort');
 const result = document.querySelector('#result');
 
 // function Census (IBGE)
 function calc() {
 
     let genre;
-    let age_group;
+    let ageGroup;
 
     // condition the genre
     let aleatory = Math.random();
@@ -17,16 +17,16 @@ function calc() {
         genre = "Homem";
     }
 
-    // conditon the age_group
+    // conditon the ageGroup
     aleatory = Math.random();
     if (aleatory <= 0.167) {
-        age_group = "idoso (a)";
+        ageGroup = "idoso (a)";
 
     } else {
-        age_group = "não idoso (a)";
+        ageGroup = "não idoso (a)";
     }
 
-    result.textContent = `O resultado do sorteio conforme censo IBGE é: ${genre} ${age_group}!`;
+    result.textContent = `O resultado do sorteio conforme censo IBGE é: ${genre} ${ageGroup}!`;
 }
 
-btn_sort.onclick = calc;
+btnSort.onclick = calc;

@@ -1,5 +1,5 @@
 // import the elements
-const btn_calc = document.querySelector('#btn_calc');
+const btnCalc = document.querySelector('#btnCalc');
 const result = document.querySelector('#result');
 
 // function calc the IMC
@@ -7,14 +7,14 @@ function calc() {
     let imc;
 
     // import the elements
-    const peso = parseFloat(document.querySelector('#peso').value.replace(',', '.'));
-    const altura = parseFloat(document.querySelector('#altura').value.replace(',', '.'));
+    const Weight = parseFloat(document.querySelector('#Weight').value.replace(',', '.'));
+    const height = parseFloat(document.querySelector('#height').value.replace(',', '.'));
 
     // condition the string or number
-    if ((isNaN(peso) === true) || (isNaN(altura) === true)) {
+    if ((isNaN(Weight) === true) || (isNaN(height) === true)) {
         result.textContent = ('Os valores inseridos não são válidos!');
     } else {
-        imc = peso / (altura ** 2);
+        imc = Weight / (height ** 2);
         let cassificao;
 
         if (imc < 18.5) {
@@ -34,4 +34,4 @@ function calc() {
     }
 }
 
-btn_calc.onclick = calc;
+btnCalc.onclick = calc;
