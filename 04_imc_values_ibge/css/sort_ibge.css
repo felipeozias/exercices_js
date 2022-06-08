@@ -44,7 +44,7 @@ fieldset {
     box-shadow: #2c2c2c 2px 2px 10px;
 }
 
-#btn_sort {
+#btnSort {
     width: 150px;
     height: 40px;
     margin: 10px calc((400px - 150px) / 2);
@@ -54,7 +54,7 @@ fieldset {
     color: #fff;
 }
 
-#btn_sort:hover {
+#btnSort:hover {
     box-shadow: green 0 0 15px;
     transition: all .2s;
 }

@@ -53,7 +53,7 @@ input {
     background-color: #f3f3f3;
 }
 
-#btn_calc {
+#btnSort {
     width: 150px;
     height: 40px;
     margin: 10px calc((400px - 150px) / 2);
@@ -63,7 +63,7 @@ input {
     color: #fff;
 }
 
-#btn_calc:hover {
+#btnSort:hover {
     box-shadow: green 0 0 15px;
     transition: all .2s;
 }

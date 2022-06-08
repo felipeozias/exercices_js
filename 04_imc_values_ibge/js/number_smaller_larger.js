@@ -1,11 +1,11 @@
 // import the elements
-const btn_sort = document.querySelector('#btn_calc');
+const btnSort = document.querySelector('#btnCalc');
 const result = document.querySelector('#result');
 
 // function smaller and larger number
 function calc() {
-    
-    const number = parseFloat(document.querySelector('#number_float').value.replace(',', '.'));
+
+    const number = parseFloat(document.querySelector('#numberFloat').value.replace(',', '.'));
 
     // condition the string or number
     if (isNaN(number) === true) {
@@ -19,4 +19,4 @@ function calc() {
     }
 }
 
-btn_sort.onclick = calc;
+btnSort.onclick = calc;
