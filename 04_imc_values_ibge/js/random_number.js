@@ -6,21 +6,24 @@ const result = document.querySelector('#result');
 function calc() {
 
     // imports the elements 
-    const valMin = parseFloat(document.querySelector('#valMin').value);
-    const valMax = parseFloat(document.querySelector('#valMax').value);
+    const valMin = Number(document.querySelector('#valMin').value.replace(',','.'));
+    const valMax = Number(document.querySelector('#valMax').value.replace(',','.'));
 
     // condition the string or number
-    if ((isNaN(valMin) === true) || (isNaN(valMax) === true)) {
-        result.textContent = ('Os valores inseridos não são numéricos inteiros!');
-    } else {
-        if (valMin >= valMax) {
-            result.textContent = 'O valor mínimo não é menor que o valor máximo!';
+    if (((isNaN(valMin) === true) || (isNaN(valMax) === true))) {
+        result.textContent = ('Os valores inseridos não são numéricos!');
 
-        } else {
-            let aleatory = parseInt(Math.random() * (valMax - valMin) + valMin);
-            result.textContent = aleatory;
-        }
+    } else if ((!Number.isInteger(valMin) || !Number.isInteger(valMax))) {
+        result.textContent = ('Os valores inseridos não são inteiros!');
+
+    } else if (valMin >= valMax) {
+        result.textContent = 'O valor mínimo não é menor que o valor máximo!';
+
+    } else {
+        let aleatory = parseInt(Math.random() * (valMax + 1 - valMin) + valMin);
+        result.textContent = aleatory;
     }
+
 }
 
 btnSort.onclick = calc;
