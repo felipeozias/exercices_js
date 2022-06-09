@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- ---------- imports the css ---------- -->
+    <link rel="stylesheet" href="css/productsSwitch.css">
+
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de produtos</title>
+</head>
+
+<body>
+
+    <!-- ---------- main the page ---------- -->
+    <main>
+        <form>
+            <Fieldset>
+                <legend>
+                    <h1>Lista de produtos</h1>
+                </legend>
+
+                <h2>Escolha um dos produtos e exiba:</h2>
+                <select id="listTheProducts">
+                    <option value="1">Almofada Coccix</option>
+                    <option value="2">Cadeida Escritório</option>
+                    <option value="3">Câmera Logitech</option>
+                    <option value="4">Encosto Lombar</option>
+                    <option value="5">Headset Razer</option>
+                </select>
+
+                <button type="button" id="btnPrint">Exibir</button>
+
+                <img id="image" alt="">
+            </Fieldset>
+        </form>
+    </main>
+
+    <script src="js/productsSwitch.js"></script>
+</body>
+
+</html>
