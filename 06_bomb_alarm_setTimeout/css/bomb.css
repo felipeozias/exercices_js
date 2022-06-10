@@ -10,9 +10,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: radial-gradient(#d1dbe7, #6987cf);
+
+}
+
+#btnBomb {
+    width: 150px;
+    height: 40px;
+    margin: 20px auto;
+    border: solid #ff0606 3px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: orange;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#btnBomb:hover {
+    transition: all .2s;
+    background-color: #ffb429;
+    box-shadow: #ffdf0d 0 0 15px;
 }
 
 img {
