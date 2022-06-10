@@ -1,9 +1,20 @@
+const btnBomb = document.querySelector('#btnBomb');
 const bombImg = document.querySelector('#bomb');
-const explosion = document.querySelector('#audioExplosion');
+const audioExplosion = document.querySelector('#audioExplosion');
 
-function test() {
-    explosion.play();
+let time;
+
+function setTime() {
+    time = setTimeout(explosion, 2000);
+    bomb.src = 'img/bomba.png';
+    btnBomb.style.backgroundColor = "#37be42";
+    btnBomb.style.borderColor = "#37be42";
+}
+
+function explosion() {
+    audioExplosion.play();
     bomb.src = 'img/explosao.png';
+    btnBomb.textContent = 'Reativar bomba';
 }
 
 function stop() {
@@ -11,8 +22,5 @@ function stop() {
     bomb.src = 'img/bombaApagada.png';
 }
 
-const time = setTimeout(test, 2000);
-
+btnBomb.onclick = setTime;
 bomb.onclick = stop;
-
-console.log('oi')
