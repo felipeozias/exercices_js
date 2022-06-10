@@ -5,7 +5,7 @@ const audioExplosion = document.querySelector('#audioExplosion');
 let time;
 
 function setTime() {
-    time = setTimeout(explosion, 2000);
+    time = setTimeout(explosion, 10000);
     bomb.src = 'img/bomba.png';
     btnBomb.style.backgroundColor = "#37be42";
     btnBomb.style.borderColor = "#37be42";
