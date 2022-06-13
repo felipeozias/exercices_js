@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Passion One', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+
+    <!-- ---------- imports the css ---------- -->
+    <link rel="stylesheet" href="css/alarm.css">
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bomba relógio</title>
+</head>
+
+<body>
+
+    <!-- ---------- main the page ---------- -->
+    <main>
+        <button id="btnStart"><span>Iniciar <br> alarme</span></button>
+
+        <div id="timeSelect">
+            <label for="minutes">Minutos:</label>
+            <select id="minutes"></select>
+            <label for="minutes">Segundos:</label>
+            <select id="seconds"></select>
+        </div>
+
+        <h1>-</h1>
+
+        <audio id="audioAlarm" src="audio/alarm.wav"></audio>
+
+    </main>
+
+    <script src="js/alarm.js"></script>
+
+</body>
+
+</html>

@@ -16,7 +16,7 @@ main {
     background-image: radial-gradient(#d1dbe7, #6987cf);
 }
 
-#btnBomb {
+#btnStart {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,42 +27,44 @@ main {
     font-family: 'Passion One', cursive;
     font-size: 30px;
     color: #ffffff;
-    background-color: #bc0000;
+    background-color: green;
     border-radius: 50%;
     cursor: pointer;
     border: none;
     box-shadow: #000 0 0 10px;
 
-    border-top: solid 5px red;
+    border-top: solid 5px #19b419;
     animation: animatio1 1s infinite linear;
     transition: all .3s;
 }
 
-#btnBomb:hover {
+#btnStart:hover {
     width: 135px;
     height: 135px;
-    background-color: #d82d06;
+    background-color: #349908;
     box-shadow: #ffff1a 0 0 20px;
     transition: all .3s;
 }
 
-#btnBomb span {
+#btnStart span {
     position: relative;
     top: -3px;
     animation: animatio2 1s infinite linear;
 }
 
+#timeSelect {
+    position: absolute;
+    top: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
 h1 {
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: 250px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     color: green;
-}
-
-img {
-    width: 300px;
-    cursor: pointer;
 }
 
 /* --------- animations --------- */
