@@ -31,9 +31,15 @@ function startTime() {
             if (timeSeconds >= 1 || timeMinutes >= 1) {
                 display.textContent = `0:${timeMinutes}:${timeSeconds}`;
                 timeSeconds--;
-            } else {
+            } else if (timeSeconds == 0 && timeMinutes == 0) {
                 audioAlarm.play();
                 clearInterval(setInterval1);
+                display.textContent = 'O tempo acabou!';
+            }
+
+            if (timeSeconds == 0 && timeMinutes > 0) {
+                timeMinutes--;
+                timeSeconds = 60;
             }
         }
         stateTime = 2;
