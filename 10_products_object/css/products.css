@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color: blue;
+    text-shadow: #acacac 2px 2px 2px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(#fff, #77CBDA);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    border: solid #2418d3 3px;
+    padding: 10px;
+    width: 300px;
+    background-color: #a1f2fd80;
+    border-radius: 10px;
+    box-shadow: rgb(126, 126, 126) 7px 7px 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='button'] {
+    width: 150px;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+input[type='button']:hover {
+    background-color: #77CBDA;
+}
+
+textarea {
+    max-width: 95%;
+}
+
+#backAlert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #00000055;
+    visibility: hidden;
+}
+
+#backAlert div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    min-width: 350px;
+    min-height: 150px;
+    background-color: #fff;
+    position: fixed;
+    border: solid #cecece 2px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#alert p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+table,
+th,
+td,
+tr {
+    border-collapse: collapse;
+    border: solid #000 1px;
+    min-width: 80px;
+    text-align: center;
+}
+
+table {
+    visibility: hidden;
+}

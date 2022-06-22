@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- ---------- imports the css ---------- -->
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de produtos</title>
+</head>
+
+<body>
+
+    <!-- ---------- main the page ---------- -->
+    <main>
+        <form>
+            <h1>Lista de produtos</h1>
+
+            <label for="name">Nome do produto:</label>
+            <input id="name" type="text">
+
+            <label for="description">Descrição do produto:</label>
+            <textarea id="description" cols="30" rows="5"></textarea>
+
+            <label for="price">Preço do produto:</label>
+            <input id="price" type="text">
+
+            <input id="btnIncludeProducts" type="button" value="Incluir produto">
+            <input id="btnListProducts" type="button" value="Listar produtos">
+
+            <div id="backAlert">
+                <div>
+                    <h2 id="msg"></h2>
+                    <table id="tableProducts">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Valor</th>
+                            <th>Editar</th>
+                            <th>Apagar</th>
+                        </tr>
+                    </table>
+                    <input id="btnAlert" type="button" value="OK">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                        style=" fill:#000000;">
+                        <path  -->
+                </div>
+
+            </div>
+
+        </form>
+    </main>
+
+    <script src="js/products.js"></script>
+</body>
+
+</html>

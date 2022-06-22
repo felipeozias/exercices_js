@@ -8,7 +8,7 @@
 
 h1 {
     font-family: 'Courgette', cursive;
-    font-size: 35px;
+    font-size: 30px;
     color: blue;
     text-shadow: #acacac 2px 2px 2px;
 }
@@ -32,30 +32,29 @@ body {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     border: solid #2418d3 3px;
     padding: 10px;
     width: 300px;
     background-color: #a1f2fd80;
     border-radius: 10px;
-    box-shadow: rgb(126, 126, 126)  7px 7px 10px ;
+    box-shadow: rgb(126, 126, 126) 7px 7px 10px;
 }
 
-#listTheCars {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: center;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cep {
+    margin: 10px 0;
     width: 200px;
     height: 30px;
-    border: solid 2px blue;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
     border-radius: 5px;
-    margin: 5px auto;
-}
-
-#image {
-    width: 250px;
-    box-shadow: rgb(134, 134, 134) 5px 5px 5px;
+    border: solid #000 2px;
 }
