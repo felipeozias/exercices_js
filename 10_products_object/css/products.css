@@ -77,6 +77,7 @@ textarea {
     padding: 10px;
     border-radius: 10px;
     background-color: #fff;
+    visibility: inherit;
 }
 
 #alert {
@@ -111,4 +112,10 @@ tr {
 
 table {
     visibility: hidden;
+}
+
+.editAndDelet{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
