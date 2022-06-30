@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     <!-- ---------- imports the css ---------- -->
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/factorial.css">
 
     <!-- =============== end imports =============== -->
 
@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lista de produtos</title>
+    <title>Fatorial</title>
 </head>
 
 <body>
@@ -32,37 +32,16 @@
     <!-- ---------- main the page ---------- -->
     <main>
         <form>
-            <h1>Lista de produtos</h1>
+            <h1>Calcular fatorial</h1>
 
-            <label for="name">Nome do produto:</label>
-            <input id="name" type="text">
-
-            <label for="description">Descrição do produto:</label>
-            <textarea id="description" cols="30" rows="5"></textarea>
-
-            <label for="price">Preço do produto:</label>
-            <input id="price" type="text">
-
-            <input id="btnIncludeProducts" type="button" value="Incluir produto">
-            <input id="btnListProducts" type="button" value="Listar produtos">
-
-            <div id="backAlert">
-                <div>
-                    <h2 id="msg"></h2>
-
-                    <input id="search" type="text">
-                    <input id="btnSearch" type="button" value="Buscar">
-
-                    <table id="tableProducts"></table>
-
-                    <input id="btnAlert" type="button" value="OK">
-                </div>
-            </div>
-
+            <label for="number">Digite um número:</label>
+            <input id="number" type="text">
+            
+            <textarea id="result"></textarea>
         </form>
     </main>
 
-    <script src="js/products.js"></script>
+    <script src="js/factorial.js"></script>
 </body>
 
 </html>
