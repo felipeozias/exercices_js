@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- =============== start imports =============== -->
+
+    <!-- ---------- import the fonts ---------- -->
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Condensed', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- inport the css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- =============== end imports =============== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotação</title>
+</head>
+
+<body>
+    <!-- <div></div> -->
+
+    <!-- header the page -->
+    <header>
+        <h1>Cotação de moeda</h1>
+    </header>
+
+    <!-- main the page -->
+    <main>
+        <label>Selecione a moeda desejada:</label>
+        <select name="cotacionMoney" id="selectCoin">
+            <option value="USD">Dólar Americano</option>
+            <option value="EUR">Euro</option>
+            <option value="BTC">Bitcoin</option>
+        </select> <br>
+
+        <label for="dateInitial">Selecione a data inicial</label>
+        <input id="dateInitial" type="date"> <br>
+
+        <label for="dateEnd">Selecione a data final</label>
+        <input id="dateEnd" type="date"> <br>
+
+        <input id="consultBtn" type="button" value="VER COTAÇÃO">
+
+        <h2 id="cotacionResult"></h2>
+        <table></table>
+    </main>
+
+    <script type='module' src="./js/index.js"></script>
+</body>
+
+</html>

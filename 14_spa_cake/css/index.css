@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* imports the styles */
+@import url(header.css);
+@import url(home.css);
+@import url(brigadeirosPage.css);
+@import url(cupcakesPage.css);
+@import url(docesPage.css);
+@import url(footer.css);
+
+/* reset the style the elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(#ffc5fd, #ffa9fc);
+    background-size: contain;
+}
