@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color: blue;
+    text-shadow: #acacac 2px 2px 2px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(#fff, #77CBDA);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    border: solid #2418d3 3px;
+    padding: 10px;
+    width: 300px;
+    background-color: #a1f2fd80;
+    border-radius: 10px;
+    box-shadow: rgb(126, 126, 126) 7px 7px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnPlay {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffc32a;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#btnPlay:hover {
+    box-shadow: #03ac11 0 0 10px;
+    cursor: pointer;
+    border-color: rgb(101, 101, 101);
+    transition: all .3s;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.numberCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: solid 1px black;
+    border-radius: 3px;
+    background-color: #d7f9ff;
+    cursor: pointer;
+}
+
+.numberSelected {
+    background-color: rgb(16, 255, 16);
+    cursor: not-allowed;
+}

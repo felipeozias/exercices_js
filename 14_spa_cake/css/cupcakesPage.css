@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#cupcakesSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 60px);
+}
+
+#cupcakesSection h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    position: absolute;
+    top: 150px;
+    margin: 0 auto;
+}
+
+#cupcakesSection img {
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: double #000000 8px;
+}
